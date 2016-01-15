@@ -103,7 +103,7 @@ box-sizing: border-box;
 
 }
 
-/*TYPO*/
+/*========== TYPO ==========*/
 h1, h2, h3 {
   font-weight: 900;
 }
@@ -181,13 +181,13 @@ a {
 }
 
 
-/*IMG*/
+/*========== IMG ==========*/
 .img_01 {
     
 }
 
 
-/*CONTENT*/
+/*======== CONTENT ========*/
 .content {
   width: 100vw;
   height: 100vh;
@@ -201,6 +201,7 @@ a {
   flex-flow: column nowrap;
 }
 
+/*HEADER*/
 #header {
   width: 100%;
   padding: 5vh 0;
@@ -225,12 +226,14 @@ a {
   justify-content: space-between;
 }
 
+/*SECTION*/
 #section {
   flex: 14 0;
   display: flex;
   flex-flow: row nowrap;
 }
 
+/*ASIDE*/
 #aside {
   flex: 1 0;
   display: flex;
@@ -244,7 +247,6 @@ a {
   padding-top: 1em;
 }
 
-/*a href*/
 #nav ul > li a {
     text-decoration: none;
     color: #7189ff;
@@ -261,6 +263,7 @@ a {
   margin-right: .8em;
 }
 
+/*MAIN*/
 #main {
   flex: 2 0;
   opacity: 1;
@@ -282,6 +285,7 @@ a {
     margin-left: 10vh;
 }
 
+/*FOOTER*/
 #footer {
   flex: 2 0;
   display: flex;
