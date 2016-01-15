@@ -415,6 +415,10 @@ a {
    Modify as content requires.
    ========================================================================== */
 
+@media screen and (max-height: 700px) {
+  .tags { columns: 2; }
+}
+
 @media screen and (max-width: 1200px) {
   html { font-size: 0.9em; }
   h2, h3 { font-size: 1.1em; }
