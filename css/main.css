@@ -422,9 +422,7 @@ a {
         
 @media screen and (max-height: 1300px) {
   h1 { 
- 	-webkit-columns: 2;
-   	-moz-columns:  2;
-    columns: 2}
+ 	}
 }
 
 @media screen and (max-width: 1200px) {
@@ -435,7 +433,6 @@ a {
 @media screen and (min-width: 1800px) {
   html { font-size: 1.15em; }
 }
-
 @media screen and (min-width: 2000px) {
   html { font-size: 1.35em; }
 }        
