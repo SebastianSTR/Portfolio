@@ -413,10 +413,15 @@ a {
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
-   ========================================================================== */
-
-@media screen and (max-height: 800px) {
+   ========================================================================== */and (max-height: 800px) {
   .tags { 
+ 	-webkit-columns: 2;
+   	-moz-columns:  2;
+    columns: 2}
+}
+        
+@media screen and (max-height: 1300px) {
+  h1 { 
  	-webkit-columns: 2;
    	-moz-columns:  2;
     columns: 2}
