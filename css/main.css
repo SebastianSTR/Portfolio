@@ -417,6 +417,7 @@ a {
 
 @media screen and (max-width: 1200px) {
   html { font-size: 0.9em; }
+  h2, h3 { font-size: 1.1em; }
 }
 
 @media screen and (min-width: 1800px) {
