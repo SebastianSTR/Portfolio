@@ -416,7 +416,10 @@ a {
    ========================================================================== */
 
 @media screen and (max-height: 800px) {
-  .tags { columns: 2; }
+  .tags { 
+ 	-webkit-columns: 2;
+   	-moz-columns:  2;
+        columns: 2}
 }
 
 @media screen and (max-width: 1200px) {
