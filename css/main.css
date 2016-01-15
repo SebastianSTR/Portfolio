@@ -235,7 +235,8 @@ a {
   flex: 1 0;
   display: flex;
   flex-flow: column nowrap;
-  padding-top: 3em;
+  align-items: center;
+  /*padding-top: 3em; */
 }
 
 #nav ul {
