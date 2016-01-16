@@ -176,7 +176,6 @@ a {
 
 .footer {
     text-align: center;
-    height: 100%;
     color: #aaa;
 }
 
@@ -204,7 +203,8 @@ a {
 /*HEADER*/
 #header {
   width: 100%;
-  padding: 5vh 0;
+  min-height: 110px;
+  padding-top: .8em;
   flex: 1 0;
   display: flex;
   flex-flow: row nowrap;
@@ -288,6 +288,7 @@ a {
 /*FOOTER*/
 #footer {
   flex: 2 0;
+  min-height: 110px;
   display: flex;
   align-items: center;
 }
