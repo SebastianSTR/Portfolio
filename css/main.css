@@ -198,6 +198,12 @@ a {
 
   display: flex;
   flex-flow: column nowrap;
+
+  background-image: 
+    repeating-linear-gradient(-45deg, 
+    transparent, transparent 0.3em, 
+    rgba(255,255,255,1) 0.3em, 
+    rgba(255,255,255,.5) 0.6em),
 }
 
 /*HEADER*/
@@ -414,11 +420,20 @@ a {
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
-   ========================================================================== */and (max-height: 800px) {
-  .tags { 
- 	-webkit-columns: 2;
-   	-moz-columns:  2;
-    columns: 2}
+   ========================================================================== */
+
+
+@media screen and (max-height: 700px) and (max-width: 1000px) {
+  #header, #footer { min-height: 70px}
+  html { font-size: 0.8em; }
+  h1 { font-size: 1.5em; }
+  #nav ul li { 
+    font-size: 1.3em;
+    margin-right: .5em;
+  }
+  #main {
+    border-radius: 11em;
+  }
 }
         
 @media screen and (max-height: 800px) and (max-width: 1400px) {
@@ -426,8 +441,12 @@ a {
   h2, h3 { font-size: 1.1em; }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
   h1 { font-size: 1.8em; }
+  #nav ul li { 
+    font-size: 1.3em;
+    margin-right: .5em;
+   }
 }
 
 @media screen and (min-width: 1800px) {
