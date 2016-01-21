@@ -196,28 +196,25 @@ a {
   top: 0px;
   left: 0;
 
-  display: flex;
-  flex-flow: column nowrap;
-
-  background-image: 
-    repeating-linear-gradient(-45deg, 
-    transparent, transparent 0.3em, 
-    rgba(255,255,255,1) 0.3em, 
-    rgba(255,255,255,.5) 0.6em),
+  /*display: flex;
+  flex-flow: column nowrap;*/
 }
 
 /*HEADER*/
 #header {
   width: 100%;
-  min-height: 110px;
-  padding-top: .8em;
-  flex: 1 0;
+  height: 100px;
+  padding: 1.5em 0 2em 0;
+  position: fixed;
+  top: 0px;
+  left: 5vh;
+
   display: flex;
   flex-flow: row nowrap;
   align-items: baseline;
 }
 
-#header, #section {
+#header, .section {
   padding-left: 5vh;
   padding-right: 5vh;
 }
@@ -233,10 +230,21 @@ a {
 }
 
 /*SECTION*/
-#section {
-  flex: 14 0;
+#fullpage {
+    width: 100%;
+    flex: 14 0;
+    transform: none!important;
+}
+
+.section {
+  display: none;
+}
+
+.flex_wrapper {
+  height: 100%;
+  padding-top: 100px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 }
 
 /*ASIDE*/
@@ -293,8 +301,8 @@ a {
 
 /*FOOTER*/
 #footer {
-  flex: 2 0;
-  min-height: 110px;
+  flex: 0 0 100%;
+  min-width: 100px;
   display: flex;
   align-items: center;
 }
@@ -345,6 +353,10 @@ a {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+.active {
+    display: block;
+}
 
 /*
  * Hide visually and from screen readers:
@@ -424,7 +436,7 @@ a {
 
 
 @media screen and (max-height: 700px) and (max-width: 1000px) {
-  #header, #footer { min-height: 70px}
+  /*#header, #footer { min-height: 70px}*/
   html { font-size: 0.8em; }
   h1 { font-size: 1.5em; }
   #nav ul li { 
@@ -442,7 +454,7 @@ a {
 }
 
 @media screen and (min-width: 1001px) and (max-width: 1300px) {
-  h1 { font-size: 1.8em; }
+  h1 { font-size: 2em; } /*oder 1.8em*/
   #nav ul li { 
     font-size: 1.3em;
     margin-right: .5em;
