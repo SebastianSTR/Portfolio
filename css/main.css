@@ -551,6 +551,11 @@ a {
     flex-flow: column nowrap;
   }
 
+  .section {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+
   #footer {
     display: none;
   }
@@ -572,6 +577,10 @@ a {
   .headline { font-size: 2em; }
   .tldr, .tags { font-size: 1.4em; }
 
+  .tldr {
+    padding-right: 0;
+  }
+
 }  
 
 @media (orientation: portrait) and (max-width: 650px) {
@@ -580,9 +589,14 @@ a {
 }     
 
 @media (orientation: portrait) and (max-width: 500px) {
-  .headline { font-size: 1.8em; }
+  .headline { font-size: 1.7em; }
 
 }       
+
+@media (orientation: portrait) and (max-width: 425px) {
+  html { font-size: 0.6em; }
+
+}  
         
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
