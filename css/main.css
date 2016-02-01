@@ -194,7 +194,7 @@ a {
 
   position: fixed;
   top: 0px;
-  left: 0;
+  left: 0px;
 
   /*display: flex;
   flex-flow: column nowrap;*/
@@ -233,6 +233,7 @@ a {
 /*SECTION*/
 #fullpage {
     width: 100%;
+    height: 90vh!important;
     flex: 14 0;
     transform: none!important;
 }
@@ -256,18 +257,18 @@ a {
   justify-content: center;
 }
 
-#nav ul {
+/*#nav ul {
   display: flex;
   flex-flow: row nowrap;
   padding-top: 1em;
-}
+}*/
 
-#nav ul > li a {
+#fp-nav ul li a {
     text-decoration: none;
     color: #7189ff;
 }
 
-#nav  ul > li {
+#fp-nav  ul li {
   font-size: 1.5em;
   font-weight: 900;
   text-align: center;
@@ -275,7 +276,11 @@ a {
   list-style-type: none;
   border: .15em solid #f7465b;
   border-radius: .7em;
-  margin-right: .8em;
+  /*margin-right: .8em;*/
+}
+
+#fp-nav  ul li a.active {
+  background-color: #f7465b!important;
 }
 
 /*MAIN*/
@@ -284,6 +289,7 @@ a {
   opacity: 1;
   border-radius: 15em;
   background: #FFEEF0;
+  margin-bottom: 100px;
   background-image: 
     repeating-linear-gradient(-45deg, 
     transparent, transparent 0.3em, 
@@ -302,10 +308,14 @@ a {
 
 /*FOOTER*/
 #footer {
-  flex: 0 1 100%;
-  min-width: 100px;
+  position: fixed;
+  top: 90vh;
+  left: 0;
+  width: 100%;
+  height: 100px;
   display: flex;
   align-items: center;
+  z-index: 1000;
 }
 
 /*======== ANIMATION ========*/
